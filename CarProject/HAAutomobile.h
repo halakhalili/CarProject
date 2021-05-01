@@ -11,15 +11,15 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HAAutomobile : NSObject
-@property (copy,nonatomic) NSString *manufactureCompany;
-@property (retain,nonatomic) NSDate *manufacture;
-@property (copy,nonatomic) NSString *model;
-@property (assign,nonatomic) NSInteger plateNumber;
-@property (assign,nonatomic) NSInteger bodySerialNumber;
-@property (retain,nonatomic) HAEngine *engine;
-@property (assign,nonatomic) HAGearType gearType;
+@property (copy ,nonatomic) NSString *manufactureCompany;
+@property (copy ,nonatomic) NSString *model;
+@property (copy ,nonatomic) NSString *bodySerialNumber;
+@property (retain ,nonatomic) NSDate *manufacture;
+@property (retain ,nonatomic) HAEngine *engine;
+@property (assign ,nonatomic) HAGearType gearType;
+@property (assign ,nonatomic) NSInteger plateNumber;
 
-- (instancetype)initWithManufactureCompany:(NSString *)manufactureCompany manufacture:(NSDate *)manufacture model:(NSString *)model plateNumber:(NSInteger)plateNumber bodySerialNumber:(NSInteger)bodySerialNumber;
+- (instancetype)initWithManufactureCompany:(NSString *)manufactureCompany manufacture:(NSDate *)manufacture model:(NSString *)model plateNumber:(NSInteger)plateNumber bodySerialNumber:(NSString *)bodySerialNumber engine:(HAEngine*) engine gearType:(HAGearType) gearType;
 
 @end
 

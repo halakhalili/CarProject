@@ -12,14 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HAEngine : NSObject
 
-@property (copy,nonatomic)NSString *manufacture;
+@property (copy ,nonatomic)NSString *manufacture;
+@property (copy ,nonatomic) NSString *model;
+@property (assign ,nonatomic ) NSInteger capacity;
+@property (assign ,nonatomic ) NSInteger cylinders;
+@property (assign ,nonatomic )HAFuelType fueltype;
 @property (retain ,nonatomic ) NSDate *manufactureDate;
-@property ( copy,nonatomic) NSString *model;
-@property ( assign ,nonatomic ) NSInteger capacity;
-@property ( assign ,nonatomic ) NSInteger cylinders;
-@property HAFuelType *fueltype;
 
--(instancetype)intWithManufacture:(NSString *)manufacture manufactureDate:(NSDate *)manufactureDate model:(NSString * )model capacity:(NSInteger)capacity cylinders:(NSInteger)cylinders;
+- (instancetype)initWithManufacture:(NSString *)manufacture manufactureDate:(NSDate *)manufactureDate model:(NSString * )model capacity:(NSInteger)capacity cylinders:(NSInteger)cylinders fueltype :(HAFuelType) fueltype;
 
 
  @end

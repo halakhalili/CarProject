@@ -6,10 +6,12 @@
 //
 
 #import "HAEngine.h"
+#import "HAFuelType.h"
 
 @implementation HAEngine
 
--(instancetype)initWithManufacture:(NSString *)manufacture manufactureDate:(NSDate *)manufactureDate model:(NSString * )model capacity:(NSInteger)capacity cylinders:(NSInteger)cylinders{
+//initializer with value
+- (instancetype)initWithManufacture:(NSString *)manufacture manufactureDate:(NSDate *)manufactureDate model:(NSString * )model capacity:(NSInteger)capacity cylinders:(NSInteger)cylinders fueltype :(HAFuelType) fueltype{
     self=[super init];
     if(self){
         self.manufacture= manufacture;
@@ -17,7 +19,12 @@
         self.model= model;
         self.capacity= capacity;
         self.cylinders= cylinders;
-    }
-    return self;
+        self.fueltype = fueltype;
+    }return self;
+}
+
+//defult initializer 
+- (instancetype) init{
+    return [self initWithManufacture:@" " manufactureDate:[NSDate date] model:@" " capacity: 0 cylinders:0 fueltype:Diesel];
 }
 @end

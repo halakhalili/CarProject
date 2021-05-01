@@ -11,12 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HAVehicle : HAAutomobile
+
 @property (assign ,nonatomic) NSInteger length;
 @property (assign ,nonatomic) NSInteger width;
 @property (retain ,nonatomic) UIColor *color;
 
 
-- (instancetype)initWithLength:(NSInteger)length width:(NSInteger )width color:(UIColor *)color manufactureCompany:(NSString *)manufactureCompany manufacture:(NSDate *)manufacture model:(NSString *)model plateNumber:(NSInteger )plateNumber bodySerialNumber:( NSInteger )bodySerialNumber;
+- (instancetype)initWithLength:(NSInteger)length width:(NSInteger )width color:(UIColor *)color manufactureCompany: (NSString *)manufactureCompany manufacture:(NSDate *)manufacture model:(NSString *)model plateNumber:(NSInteger)plateNumber bodySerialNumber:(NSString *)bodySerialNumber engine:(HAEngine*) engine gearType:(HAGearType) gearType;
 
 @end
 

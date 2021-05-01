@@ -21,6 +21,10 @@
 		3F708F2C262C294B009572E6 /* HAVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F708F2B262C294B009572E6 /* HAVehicle.m */; };
 		3F708F32262C2C35009572E6 /* HACar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F708F31262C2C35009572E6 /* HACar.m */; };
 		3F708F38262C2CC5009572E6 /* HATruck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F708F37262C2CC5009572E6 /* HATruck.m */; };
+		CF0E127B263D596300BE8FDA /* HAAddAutoMobileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0E127A263D596300BE8FDA /* HAAddAutoMobileViewController.m */; };
+		CF9DFBBF263CC2A700AD3296 /* HAAutomoblieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9DFBBE263CC2A700AD3296 /* HAAutomoblieTableViewController.m */; };
+		CF9DFBC2263CD30400AD3296 /* HAShowAutoMobileTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9DFBC1263CD30400AD3296 /* HAShowAutoMobileTypeViewController.m */; };
+		CF9DFBC5263CD3BE00AD3296 /* HAAutoMobileDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9DFBC4263CD3BE00AD3296 /* HAAutoMobileDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,14 @@
 		3F708F31262C2C35009572E6 /* HACar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HACar.m; sourceTree = "<group>"; };
 		3F708F36262C2CC5009572E6 /* HATruck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HATruck.h; sourceTree = "<group>"; };
 		3F708F37262C2CC5009572E6 /* HATruck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HATruck.m; sourceTree = "<group>"; };
+		CF0E1279263D596300BE8FDA /* HAAddAutoMobileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAAddAutoMobileViewController.h; sourceTree = "<group>"; };
+		CF0E127A263D596300BE8FDA /* HAAddAutoMobileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAAddAutoMobileViewController.m; sourceTree = "<group>"; };
+		CF9DFBBD263CC2A700AD3296 /* HAAutomoblieTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAAutomoblieTableViewController.h; sourceTree = "<group>"; };
+		CF9DFBBE263CC2A700AD3296 /* HAAutomoblieTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAAutomoblieTableViewController.m; sourceTree = "<group>"; };
+		CF9DFBC0263CD30400AD3296 /* HAShowAutoMobileTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAShowAutoMobileTypeViewController.h; sourceTree = "<group>"; };
+		CF9DFBC1263CD30400AD3296 /* HAShowAutoMobileTypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAShowAutoMobileTypeViewController.m; sourceTree = "<group>"; };
+		CF9DFBC3263CD3BE00AD3296 /* HAAutoMobileDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAAutoMobileDetailsViewController.h; sourceTree = "<group>"; };
+		CF9DFBC4263CD3BE00AD3296 /* HAAutoMobileDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAAutoMobileDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +136,8 @@
 				3F708EC4262C1F6E009572E6 /* AppDelegate.h */,
 				3F708EC5262C1F6E009572E6 /* AppDelegate.m */,
 				3F708EC7262C1F6E009572E6 /* SceneDelegate.h */,
+				CF9DFBBD263CC2A700AD3296 /* HAAutomoblieTableViewController.h */,
+				CF9DFBBE263CC2A700AD3296 /* HAAutomoblieTableViewController.m */,
 				3F708EC8262C1F6E009572E6 /* SceneDelegate.m */,
 				3F708ECD262C1F6F009572E6 /* Main.storyboard */,
 				3F708ED0262C1F7C009572E6 /* Assets.xcassets */,
@@ -144,6 +158,12 @@
 				3F708F36262C2CC5009572E6 /* HATruck.h */,
 				3F708F37262C2CC5009572E6 /* HATruck.m */,
 				3F5A5F1F2631658700CBA2DB /* HAGearType.h */,
+				CF9DFBC0263CD30400AD3296 /* HAShowAutoMobileTypeViewController.h */,
+				CF9DFBC1263CD30400AD3296 /* HAShowAutoMobileTypeViewController.m */,
+				CF9DFBC3263CD3BE00AD3296 /* HAAutoMobileDetailsViewController.h */,
+				CF9DFBC4263CD3BE00AD3296 /* HAAutoMobileDetailsViewController.m */,
+				CF0E1279263D596300BE8FDA /* HAAddAutoMobileViewController.h */,
+				CF0E127A263D596300BE8FDA /* HAAddAutoMobileViewController.m */,
 			);
 			path = CarProject;
 			sourceTree = "<group>";
@@ -295,14 +315,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0E127B263D596300BE8FDA /* HAAddAutoMobileViewController.m in Sources */,
 				3F708F38262C2CC5009572E6 /* HATruck.m in Sources */,
+				CF9DFBC5263CD3BE00AD3296 /* HAAutoMobileDetailsViewController.m in Sources */,
 				3F708EC6262C1F6E009572E6 /* AppDelegate.m in Sources */,
 				3F708F09262C227D009572E6 /* HAEngine.m in Sources */,
 				3F708F32262C2C35009572E6 /* HACar.m in Sources */,
 				3F708F1A262C2878009572E6 /* HAMotorcycle.m in Sources */,
 				3F708F11262C2507009572E6 /* HAAutomobile.m in Sources */,
 				3F708ED7262C1F7C009572E6 /* main.m in Sources */,
+				CF9DFBBF263CC2A700AD3296 /* HAAutomoblieTableViewController.m in Sources */,
 				3F708EC9262C1F6E009572E6 /* SceneDelegate.m in Sources */,
+				CF9DFBC2263CD30400AD3296 /* HAShowAutoMobileTypeViewController.m in Sources */,
 				3F708F2C262C294B009572E6 /* HAVehicle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
